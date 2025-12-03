@@ -2,15 +2,15 @@
 #include "ball.h"
 #include "paddle.h"
 #include "brick.h"
+#include "datos.h"
 #include <stdio.h>
 
 void render_frame() {
-    int height=10;
-    int width=40;
+    
     system("cls");
-    for(int i=0; i<ALTO; i++){
-        for(int j=0; j<ANCHO; j++){
-            if(i==0 || j==0 || j==ANCHO-1){
+    for(int i=0; i<HEIGHT; i++){
+        for(int j=0; j<WIDTH; j++){
+            if(i==0 || j==0 || j==WIDTH-1){
                 printf("#");
                 continue;
             }
