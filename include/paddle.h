@@ -2,8 +2,8 @@
 #define PADDLE_H
 
 typedef struct {
-    int x;      // posición del centro
-    int width;
+    int y = 9;      // posición del centro
+    int width= 7;
 } Paddle;
 
 void paddle_init();
