@@ -14,10 +14,20 @@ void render_frame() {
                 printf("#");
                 continue;
             }
+            if(i==HEIGHT-1 && j==paddle.x){
+                for(int w=0;w<paddle.width; w++){
+                    printf("=");
+                    j++;
+                }
+
+            }
             if(i>0 && i<6){
                 printf("[]");
                 j++;
 
+            }
+            if(i==ball.x && j==ball.y){
+                printf("O");
             }
 
         }

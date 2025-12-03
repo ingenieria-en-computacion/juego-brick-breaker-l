@@ -1,9 +1,10 @@
 #ifndef PADDLE_H
 #define PADDLE_H
+#include "datos.h"
 
 typedef struct {
-    int y = 9;      // posición del centro
-    int width= 7;
+    int x;      // posición del centro
+    int width;
 } Paddle;
 
 void paddle_init();

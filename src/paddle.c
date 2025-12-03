@@ -3,10 +3,10 @@
 #include "datos.h"
 
 static Paddle paddle;
-int paddle_x;
+
 void paddle_init() {
-    int paddle_y = paddle.x;
-    paddle_x = WIDTH/2;
+    paddle.x = WIDTH/2;
+    paddle.width = 7;
     // TODO: colocar el paddle centrado
 }
 
@@ -19,11 +19,11 @@ void paddle_update(int direction) {
         break;
 
         case 1:
-            paddle_x ++;
+            paddle.x ++;
         break;
 
         case -1:
-            paddle_x --;
+            paddle.x --;
         break;
     }
     // TODO: mover el paddle según la dirección (-1 izquierda, 1 derecha)
