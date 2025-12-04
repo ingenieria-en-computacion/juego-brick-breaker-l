@@ -4,6 +4,7 @@
 typedef struct {
     int x, y;       // Posición
     int dx, dy;     // Dirección
+    int lives;      // vidas
 } Ball;
 
 void ball_init();

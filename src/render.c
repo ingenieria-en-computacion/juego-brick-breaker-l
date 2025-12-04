@@ -14,7 +14,7 @@ void render_frame() {
                 printf("#");
                 continue;
             }
-            if(i==HEIGHT-1 && j==paddle.x){
+            if(i==HEIGHT-2 && j==paddle.x){
                 for(int w=0;w<paddle.width; w++){
                     printf("=");
                     j++;
